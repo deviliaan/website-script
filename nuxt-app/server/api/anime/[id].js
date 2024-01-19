@@ -4,6 +4,7 @@ export default defineEventHandler(async(event)=>{
     const res = await provider.fetchAnimeInfo(id).then((data)=>{
         return data;
     })
+    
     return {
         status: 200,
         response: res
