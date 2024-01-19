@@ -15,6 +15,7 @@
     "vue-router": "^4.2.5"
   },
   "dependencies": {
+    "@consumet/extensions": "^1.5.4",
     "@iconify-json/mdi": "^1.1.64",
     "@iconify-json/quill": "^1.1.10",
     "@nuxt/ui": "^2.12.3"
