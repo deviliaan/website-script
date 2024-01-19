@@ -10,7 +10,7 @@
             <h2 class="">{{ data.response.title }}</h2>
             <p>Anilist Id: {{ data.response?.alID }}</p>
           </div>
-          <div class="rounded shadow-lg p-2 w-full">
+          <div class="rounded shadow-lg p-2 h-fit w-full">
             <p class="pt-2">Type: {{ data.response.type }}</p>
             <p>Episodes: {{data.response.totalEpisodes}}</p>
           </div>
