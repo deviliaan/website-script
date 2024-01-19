@@ -19,8 +19,8 @@
      <div class="p-4">
        <UAccordion color="amber" variant="soft" size="sm" :items="[{label: 'Story:',content: data.response.description}]"/>
      </div>
-     <div>
-      
+     <div class="px-4" v-for="episode in data.response.episodes">
+        <EpisodeItem :episode="episode"/>
      </div>   
   </div>
 </template>
@@ -28,7 +28,7 @@
 <script setup>
 const { id } = useRoute().params
 const {data} = await useFetch(`/api/anime/${id}`);
-
+import EpisodeItem from '~/components/EpisodeItem.vue'
 </script>
 
 <style>
