@@ -1,6 +1,10 @@
 <template>
   <div>
-    Wellcome
+    <div class="w-full md:grid-cols-4 lg:grid-cols-5 p-2 gap-2 grid grid-cols-3">
+      <NuxtLink class="shadow-lg border border-orange-300" v-for="anime in data?.response.results">
+        <Card :anime="anime"/>
+      </NuxtLink>
+    </div>
   </div>
 </template>
 
