@@ -4,9 +4,9 @@
   </div>
 </template>
 
-<script lang="ts" setup>
-
-const {data} = await useFetch('/api/anime')
+<script setup>
+const { id } = useRoute().params
+const {data} = await useFetch(`/api/anime/${id}`)
 </script>
 
 <style>
