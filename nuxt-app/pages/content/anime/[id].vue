@@ -19,7 +19,7 @@
      <div class="p-4">
        <UAccordion color="amber" variant="soft" size="sm" :items="[{label: 'Story:',content: data.response.description}]"/>
      </div>
-     <div class="px-4" v-for="episode in data.response.episodes">
+     <div class="px-4 flex gap-2 w-full py-2" v-for="episode in data.response.episodes">
         <EpisodeItem :episode="episode"/>
      </div>   
   </div>
